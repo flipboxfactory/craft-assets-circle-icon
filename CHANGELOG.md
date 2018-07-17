@@ -1,5 +1,9 @@
 Changelog
 =========
+## 1.0.2
+### Added
+- Mask color changes can be ignored by adding an 'ignore' class to the svg node.
+
 ## 1.0.1
 ### Changed
 - Minor style changes to icons

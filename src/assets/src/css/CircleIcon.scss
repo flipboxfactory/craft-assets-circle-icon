@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 @mixin svg-mask($color) {
-  rect, circle, ellipse, line, polyline, polygon, path, text {
+  rect:not(.ignore), circle:not(.ignore), ellipse:not(.ignore), line:not(.ignore), polyline:not(.ignore), polygon:not(.ignore), path:not(.ignore), text:not(.ignore) {
     fill: $color;
     fill-opacity: 1;
     stroke-width: 0;
@@ -9,7 +9,7 @@
 }
 
 @mixin svg-text-mask($color) {
-  text {
+  text:not(.ignore) {
     fill: $color;
     fill-opacity: 1;
     stroke-width: 0;
